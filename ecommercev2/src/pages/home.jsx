@@ -1,6 +1,6 @@
 import React from "react";
 import "../css/home.css"; // Import the CSS file
-import Slider from "../src/components/slider";
+import Slider from "../components/slider";
 
 function Home() {
   return (
