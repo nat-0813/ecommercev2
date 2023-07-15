@@ -5,6 +5,7 @@ import pay from "../images/pay.png";
 import appstore from "../images/appstore.jpeg";
 import play from "../images/play.jpeg";
 import Connoisseur from "../images/Connoisseur-International.png";
+import { SocialIcon } from "react-social-icons";
 
 export const Footer = () => {
   return (
