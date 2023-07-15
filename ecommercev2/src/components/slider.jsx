@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
-import preBtn from "../images/arrow.png";
-import nxtBtn from "../images/arrow.png";
+import preBtn from "../images/left-arrow.png";
+import nxtBtn from "../images/right-arrow.png";
 import fpro1 from "../images/fpro1.webp";
 import fpro2 from "../images/fpro2.jpeg";
 import fpro3 from "../images/fpro3.webp";
