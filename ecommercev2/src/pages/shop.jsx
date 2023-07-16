@@ -1,4 +1,5 @@
-import React from "react";
+
+import React, {useEffect, useState  } from 'react';
 import "../css/shop.css";
 import pro1 from "../images/pro1.webp";
 import pro2 from "../images/pro2.png";
@@ -12,10 +13,39 @@ import pro9 from "../images/pro9.jpeg";
 import pro10 from "../images/pro10.webp";
 import pro11 from "../images/pro11.webp";
 import pro12 from "../images/pro12.webp";
+import { response } from "express";
 
 const shop = () => {
+  const [products, setProducts] = useState([]);
+
+  useEffect(() => {
+  fetch('http://localhost:3000/productsjson')// Replace with your API endpoint
+  .then(response => response.json())
+  .then(data => {
+setProducts(data);
+})
+
+.catch(error => {
+  console.error('Error fetching products:', error);
+});
+}, []);
+
   return (
-    <>
+    <div>
+
+    <ul id = "products">
+      {products.map(product => (
+<li key={product.Id}>
+  <img src={product.ProductImage} alt= {product.ProductName} />
+  <h2>{product.ProductName}</h2>
+  <h4>{product.Description}</h4>
+  <p>${product.Price.toFixed(2)}</p>
+</li>
+      ))}
+      </ul>
+    
+  );
+      };
       <section className="page-header">
         <h1>Stay Adventurous </h1>
         <ul className="product-list"></ul>
