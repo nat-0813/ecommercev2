@@ -49,6 +49,7 @@ const Slider = () => {
             <h2 className="product-brand">Dragon Ball Z</h2>
             <p className="product-short-description">Dragon Ball Z Gummies</p>
           </div>
+          <h4>$6.50</h4>
         </div>
 
         {/* Render other product cards */}
@@ -68,6 +69,7 @@ const Slider = () => {
               Attack on Titan chocolate bar
             </p>
           </div>
+          <h4>$4.50</h4>
         </div>
 
         <div className="product-card">
@@ -85,6 +87,7 @@ const Slider = () => {
               Chocolate Wafer with Sticker
             </p>
           </div>
+          <h4>$3.50</h4>
         </div>
 
         <div className="product-card">
@@ -102,6 +105,7 @@ const Slider = () => {
               Dragon Ball Super Gummies
             </p>
           </div>
+          <h4>$6.50</h4>
         </div>
 
         <div className="product-card">
@@ -119,6 +123,7 @@ const Slider = () => {
               Bundle of 3 Drinks: Spirit Bomb, Power Boost, Warrior Power
             </p>
           </div>
+          <h4>$10.50</h4>
         </div>
 
         <div className="product-card">
@@ -130,6 +135,7 @@ const Slider = () => {
             <h2 className="product-brand">Pokemon</h2>
             <p className="product-short-description">Chocolate wafer</p>
           </div>
+          <h4>$6.50</h4>
         </div>
       </div>
     </section>
