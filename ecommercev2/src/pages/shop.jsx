@@ -17,7 +17,7 @@ import pro12 from "../images/pro12.webp";
 
 const Shop = () => {
   const [products, setProducts] = useState([]);
-  const [selectedFilter, setSelectedFilter] = useState("");
+  const [selectedFilter, setSelectedFilter] = useState("all");
   const [filteredProducts, setFilteredProducts] = useState([]);
 
   useEffect(() => {
@@ -52,7 +52,6 @@ const Shop = () => {
       setFilteredProducts(filtered);
     }
   };
-
   return (
     <>
       <div className="filter-buttons">
